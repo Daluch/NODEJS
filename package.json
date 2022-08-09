@@ -1,0 +1,23 @@
+{
+  "name": "luch",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "luch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node"
+  },
+  "keywords": [
+    "node",
+    "luch"
+  ],
+  "author": "luch",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "heroku": "^7.62.0"
+  }
+}
