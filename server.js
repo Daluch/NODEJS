@@ -1,19 +1,8 @@
-var express=require("express")
-var app=express()
+var express=require ("express")
+var myroute=require ("./route.js")
+var app=express ()
 
-app.get("/",(req,res)=>{
-
-res.sendFile(__dirname+"/index.html")
-
-
-})
-app.get("/file",(req,res)=>{
-
-res.send("/file.html")
+app.use("/", myroute)
 
 
-})
-
-app.listen(process.env.PORT || 8080,()=> console.log("8080"))
-
-
+app.listen(process.env.PORT || 3000)
